@@ -1,0 +1,30 @@
+.nav {
+  // .nav__list
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  // .nav__item
+  &__item {
+    &:not(:last-child) {
+      margin-right: 42px;
+      @media (max-width: $tablet) {
+        margin-right: 21px;
+      }
+    }
+  }
+
+  // .nav__link
+  &__link {
+    transition: color 0.2s ease-in;
+    // .nav__link_active, hover
+    &:hover {
+      color: $accent-color;
+    }
+    &_active {
+      font-weight: 700;
+      color: $accent-color;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.page {
+  // .page__home
+  &__home {
+    margin-bottom: 105px;
+    @media (max-width: $tablet) {
+      margin-bottom: 75px;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 50px;
+    }
+  }
+  // .page__clients
+  &__clients {
+    margin-bottom: 94px;
+    @media (max-width: $tablet) {
+      margin-bottom: 75px;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 50px;
+    }
+  }
+  // .page__objects
+  &__objects {
+    margin-bottom: 154px;
+    @media (max-width: $tablet) {
+      margin-bottom: 75px;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 50px;
+    }
+  }
+  // .page__cta
+  &__cta {
+    margin-bottom: 144px;
+    @media (max-width: $tablet) {
+      margin-bottom: 70px;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 40px;
+    }
+  }
+  // .page__serve
+  &__serve {
+    margin-bottom: 113px;
+    @media (max-width: $tablet) {
+      margin-bottom: 60px;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 30px;
+    }
+  }
+  // .page__choose-us
+  &__choose-us {
+    margin-bottom: 170px;
+    @media (max-width: $tablet) {
+      margin-bottom: 80px;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 40px;
+    }
+  }
+  // .page__testimonials
+  &__testimonials {
+    margin-bottom: 40px;
+    @media (max-width: $tablet) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 40px;
+    }
+  }
+  // .page__contact-us
+  &__contact-us {
+    margin-bottom: 90px;
+  }
+}
+
+
+

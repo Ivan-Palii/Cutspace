@@ -1,0 +1,34 @@
+.choose-us {
+	// .choose-us__container
+	&__container {
+	}
+
+	// .choose-us__title
+	&__title {
+		text-align: center;
+		margin-bottom: 58px;
+		@media (max-width: $tablet) {
+			margin-bottom: 30px;
+		}
+		@media (max-width: $mobile) {
+			margin-bottom: 15px;
+		}
+	}
+
+	// .choose-us__advantages-row
+	&__advantages-row {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		column-gap: 35px;
+		@media (max-width: $tablet) {
+			column-gap: 15px;
+			row-gap: 20px;
+			flex-wrap: wrap;
+		}
+	}
+
+	// .choose-us__advantages-item
+	&__advantages-item {
+	}
+}

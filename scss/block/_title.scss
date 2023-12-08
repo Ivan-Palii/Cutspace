@@ -1,0 +1,9 @@
+.title{
+	font-size: 42px;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	line-height: 1.476;
+	@media (max-width: $tablet) {
+		font-size: 32px;
+	}
+}

@@ -1,0 +1,114 @@
+.objects {
+  // .objects__container
+  &__container {
+    max-width: 100%;
+    padding: 0 15px 0 0;
+  }
+
+  // .objects__row
+  &__row {
+    display: flex;
+    justify-content: center;
+    //justify-content: flex-end;
+    align-items: center;
+    overflow-x: hidden;
+
+    @media (max-width: 1410px) {
+      justify-content: flex-end;
+    }
+    @media (max-width: $tablet) {
+      flex-wrap: wrap;
+      align-items: flex-end;
+      flex-direction: column-reverse;
+      row-gap: 20px;
+    }
+  }
+
+  // .objects__images
+  &__images {
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    flex-shrink: 0;
+    @media (max-width: $tablet) {
+      align-self: center;
+      margin-left: -80px;
+      padding-right: 80px;
+    }
+  }
+
+  // .objects__img-card
+  &__img-card {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 32px;
+      @media (max-width: $tablet) {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__img-card:not(:last-child) > &__img {
+    border-radius: 20px;
+  }
+
+  // .objects__img
+  &__img {
+    border-radius: 20px 20px 0 20px;
+  }
+
+  // .objects__card-info
+  &__card-info {
+    position: absolute;
+    //top: 322px;
+    //right: -46px;
+    top: 58.5%;
+    right: -12%;
+
+    @media (max-width: $tablet) {
+      top: 50%;
+      right: -6%;
+    }
+    @media (max-width: $mobileSmall) {
+      transform: translateY(-30%);
+      left: 10%;
+    }
+  }
+
+  // .objects__text
+  &__text {
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 543px;
+    padding-left: 170px;
+    @media (max-width: $tablet) {
+      max-width: none;
+      padding-left: 15px;
+    }
+  }
+
+  // .objects__title
+  &__title {
+    //margin-top: 68px;
+    @media (max-width: $tablet) {
+      text-align: center;
+    }
+  }
+
+  // .objects__paragraph
+  &__paragraph {
+    margin-top: 20px;
+    letter-spacing: 1.15px;
+    @media (max-width: $tablet) {
+      margin-top: 10px;
+    }
+  }
+
+  // .objects__btn
+  &__btn {
+    margin-top: 40px;
+    @media (max-width: $tablet) {
+      margin-top: 20px;
+    }
+  }
+}

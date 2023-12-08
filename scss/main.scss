@@ -1,0 +1,33 @@
+// base
+@import "base/variables";
+@import "base/reset";
+@import "base/base";
+
+// blocks ------------------------
+
+//header
+@import "block/header";
+@import "block/logo";
+@import "block/nav";
+
+//page
+
+@import "block/page";
+@import "block/home";
+@import "block/form";
+@import "block/btn";
+@import "block/clients";
+@import "block/objects";
+@import "block/title";
+@import "block/card-info";
+@import "block/cta";
+@import "block/serve";
+@import "block/card-customer";
+@import "block/choose-us";
+@import "block/advantages-item";
+@import "block/testimonials";
+@import "block/testimonial-card";
+@import "block/contact-us";
+
+//footer
+@import "block/footer";

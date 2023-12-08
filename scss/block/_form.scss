@@ -1,0 +1,63 @@
+.form {
+  border-radius: 29px;
+  background: #fff;
+  box-shadow: 0 17px 42px rgba(0, 0, 0, 0.12);
+  height: 58px;
+
+  display: flex;
+  flex-shrink: 1;
+  transition: box-shadow .2s;
+  @media (max-width: $mobileSmall) {
+    height: 46px;
+  }
+  &_active {
+    box-shadow: 0 17px 42px rgba(247, 132, 52, 0.27);
+  }
+
+  // .form__label
+  &__label {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 72px;
+    @media (max-width: $mobileSmall) {
+      padding-left: 40px;
+    }
+    height: 100%;
+    cursor: text;
+    &::before {
+      content: "";
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      left: 28px;
+
+      width: 24px;
+      height: 19px;
+      background-image: url("/img/icons/mail.svg");
+      background-size: cover;
+
+      @media (max-width: $mobileSmall) {
+        width: 19px;
+        height: 14px;
+        left: 14px;
+      }
+    }
+  }
+
+  // .form__input
+  &__input {
+    flex-grow: 1;
+    margin-right: 10px;
+
+    &::placeholder {
+      color: $placeholder-color;
+    }
+  }
+
+  // .form__btn
+  &__btn {
+  }
+}
